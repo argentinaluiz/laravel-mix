@@ -15,10 +15,7 @@ mix.styles([
     'node_modules/bootstrap/dist/css/bootstrap.min.css',
 ], 'public/css/style.css');
 
-mix.scripts([
-    'node_modules/bootstrap/dist/js/bootstrap.min.js',
-    'resources/assets/js/app.js'
-], 'public/js/scripts.js');
+mix.js('resources/assets/js/app.js', 'public/js')
 
 mix.autoload({
     jquery: ['$', 'window.jQuery']
